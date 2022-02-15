@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Starbucks" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">Rewards</a>
+          </li>
+          <li>
+            <a href="#">Gift Cards</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="#">
+              <img src="img/marker.svg" alt="" />
+              <span>Find a store</span>
+            </a>
+          </li>
+          <li><button class="btn btn-dark-outline">Sign in</button></li>
+          <li><button class="btn btn-dark">Join now</button></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+  </body>
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const nav = document.getElementById("menu");
+
+    function navToggle() {
+      btn.classList.toggle("open");
+      nav.classList.toggle("hidden");
+      document.body.classList.toggle("no-scroll");
+    }
+
+    btn.addEventListener("click", navToggle);
+  </script>
+</html>

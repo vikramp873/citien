@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Citizen</title>
+    <link rel="stylesheet" href="../Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="home.html">
+            <img src="../Images/logo.png" alt="Starbucks" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="aboutus.html">About Us</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="#">Our Story</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="products.html">Our Story</a>
+        </li>
+        <li>
+          <a href="contactus.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">Call Us</button>
+        <button class="btn btn-dark">Join now</button>
+        <!-- <div>
+          <a href="#">
+            <img src="img/marker.svg" alt="" />
+            <span>Find a store</span>
+          </a>
+        </div> -->
+      </div>
+    </div>
+
+    <div>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../Images/imgone.jpg" style="width: 100%" />
+          <!-- <div class="text">SlideShow 1</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../Images/imagetwo.jpg" style="width: 100%" />
+          <!-- <div class="text">SlideShow 2</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../Images/imagethree.jpg" style="width: 100%" />
+          <!-- <div class="text">SlideShow Three</div> -->
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <!-- <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div> -->
+    </div>
+
+    <!-- Box A -->
+    <div>
+      <!-- <section class="box box-a bg-primary text-center py-md">
+        <div class="box-inner">
+          <p class="text-md">Welcome to the world of umbrella and raincoat</p>
+        </div>
+      </section> -->
+
+      <section class="menu" id="menu">
+        <div class="title">
+          <h2 class="titletext">Our Latest Products</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="content">
+          <div class="box">
+            <div class="imgbx">
+              <img src="../Images/diwali-festival-gcb5aacbec_1920.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h3>Umbrella</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgbx">
+              <img src="../Images/pexels-maddy-freddie-6332037.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h3>RainCoat</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgbx">
+              <img src="../Images/unsplash.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h3>Umbrella</h3>
+            </div>
+          </div>
+          <div class="title">
+            <a href="#" class="btn">View More Products</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SlideShow -->
+
+    <!-- Box B -->
+    <section class="box-new box-b bg-secondary grid-col-2">
+      <img src="../Images/logo2.png" alt="" />
+      <div class="box-text">
+        <h2 class="text-xl">Latest Product</h2>
+        <p class="text-md">Long Description</p>
+        <a href="#" class="btn btn-light-outline">Order Now</a>
+      </div>
+    </section>
+
+    <section class="box box-c bg-secondary grid-col-2 grid-reversed">
+      <img src="../Images/logo2.png" alt="" />
+      <div class="box-text">
+        <h2 class="text-xl">Latest Product 2</h2>
+        <p class="text-md">Long Description</p>
+        <a href="#" class="btn btn-light-outline">Order Now</a>
+      </div>
+    </section>
+
+    <section class="box box-f grid-col-2">
+      <div>
+        <!-- <img src="img/box-f1.jpg" alt="" /> -->
+        <div class="bg-extra py-lg">
+          <div class="box-text">
+            <h2 class="text-md">Let the holiday cheer come to you</h2>
+            <p class="text-sm">
+              Make the moment merry. Order Now. Get Flat50% off and free
+              delivery
+            </p>
+            <a href="#" class="btn btn-dark-outline">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- <img src="img/box-f2.jpg" alt="" /> -->
+        <div class="bg-primary py-lg">
+          <div class="box-text">
+            <h2 class="text-md">Loved Passing on Netflix?</h2>
+            <p class="text-sm">
+              Our new social series about film adaptations kicks off with the
+              actors and directors who brought the book to life.
+            </p>
+            <a href="#" class="btn btn-light-outline">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align: center">
+      <section>
+        <h1>Trending Items</h1>
+      </section>
+
+      <section>
+        <h1>Faq</h1>
+      </section>
+
+      <section>
+        <h1>Customer Review</h1>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-3">
+        <div>
+          <h1>Citizens</h1>
+          <p>Copyright &copy; 2022</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">About Us</a></li>
+            <li><a href="docs.html">Products</a></li>
+            <li><a href="docs.html">Our Story</a></li>
+            <li><a href="docs.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../Javascript/script.js"></script>
+</html>
